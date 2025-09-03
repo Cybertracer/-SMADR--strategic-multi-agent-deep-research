@@ -16,39 +16,9 @@ This application is built to be flexible, allowing users to connect to various p
 
 The system processes each query through a pipeline of specialized agents.
 
-```mermaid
-graph TD
-    A[Start: User Submits Query] --> B{1. Strategist Agent};
-    B -- Creates --> C[Execution Plan];
-    C --> D{2. Initializer Agents (x4)};
-    D -- Uses Plan to Generate --> E[4x Initial Responses];
-    E --> F{3. Refiner Agents (x4)};
-    F -- Each agent critiques its own<br/>initial response against the others --> G[4x Refined Responses];
-    G --> H{4. Synthesizer Agent};
-    H -- Analyzes and combines all<br/>refined responses --> I[Final Answer];
-    I --> J[End: Display to User];
-    J -- Provides --> K[Download Button];
+Flowchart <img width="1024" height="1536" alt="SMADR Sep 2, 2025" src="https://github.com/user-attachments/assets/a05aa120-a7db-4818-a761-6c0173e54025" />
 
-    subgraph "Step 1: Planning"
-        B
-    end
 
-    subgraph "Step 2: Initial Generation (Sequential)"
-        D
-    end
-
-    subgraph "Step 3: Critical Refinement (Sequential)"
-        F
-    end
-
-    subgraph "Step 4: Final Synthesis"
-        H
-    end
-
-    subgraph "Final Output"
-        J
-    end
-```
 
 ## Setup and Installation
 
