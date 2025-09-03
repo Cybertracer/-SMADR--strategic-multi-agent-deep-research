@@ -1,0 +1,5 @@
+{
+  "name": "(SMADR) Strategic Multi-Agent Deep Research",
+  "description": "A flexible, agentic orchestrator where multiple AI agents collaborate to provide deep, researched answers. This tool allows users to configure and switch between different AI providers (like Google, Groq, and OpenRouter) and models. The sequential workflow involves a strategist, initializers, refiners, and a final synthesizer to produce high-quality, structured responses to complex queries.",
+  "requestFramePermissions": []
+}
